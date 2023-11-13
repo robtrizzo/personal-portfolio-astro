@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HorizontalCard from '../components/HorizontalCard.astro';
+---
+
+<BaseLayout title="Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Broadtime</div>
+  </div>
+
+  <HorizontalCard
+    title="RSD MRKT"
+    img="/post_img.webp"
+    desc="E-commerce platform for selling vinyl records."
+    url="https://rsdmrkt.com"
+    tags={['React', 'Express', 'MongoDB']}
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Broadtime Email Service"
+    img="/post_img.webp"
+    desc="Email service for rendering emails with dynamic content."
+    url="#"
+    tags={['React Email', 'Express', 'TypeScript', 'Terraform']}
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Peraton</div>
+  </div>
+
+  <HorizontalCard
+    title="Space Systems"
+    img="/post_img.webp"
+    desc="Large scale distributed system to support space missions."
+    url="https://www.peraton.com/missions/space/"
+    tags={['Docker', 'Kubernetes', 'Java']}
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Enterprise Webapp"
+    img="/post_img.webp"
+    desc="REST APIs and testing suite for a large ongoing project."
+    url="https://www.peraton.com"
+    tags={['Java', 'Spring', 'Ansible']}
+  />
+</BaseLayout>
